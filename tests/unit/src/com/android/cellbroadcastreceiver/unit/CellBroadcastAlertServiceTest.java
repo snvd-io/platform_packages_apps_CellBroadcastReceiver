@@ -591,6 +591,7 @@ public class CellBroadcastAlertServiceTest extends
         Handler handler = new Handler(Looper.getMainLooper());
         IPowerManager mockedPowerService = mock(IPowerManager.class);
         mMockedPowerManager = new PowerManager(mContext, mockedPowerService, null, handler);
+        doReturn("alert dialog title").when(mResources).getText(anyInt());
 
         Intent intent = new Intent(mContext, CellBroadcastAlertService.class);
         intent.setAction(SHOW_NEW_ALERT_ACTION);
@@ -678,6 +679,8 @@ public class CellBroadcastAlertServiceTest extends
         doReturn(true).when(mResources).getBoolean(
                 eq(com.android.cellbroadcastreceiver.R.bool.enable_alert_handling_during_call));
         doReturn(TelephonyManager.CALL_STATE_RINGING).when(mMockedTelephonyManager).getCallState();
+        doReturn("alert dialog title").when(mResources).getText(anyInt());
+
         Intent intent = new Intent(mContext, CellBroadcastAlertService.class);
         intent.setAction(SHOW_NEW_ALERT_ACTION);
         SmsCbMessage message = createMessage(12345);
