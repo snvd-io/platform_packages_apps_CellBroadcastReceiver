@@ -796,11 +796,14 @@ public class CellBroadcastAlertService extends Service {
     static void addToNotificationBar(SmsCbMessage message,
             ArrayList<SmsCbMessage> messageList, Context context,
             boolean fromSaveState, boolean shouldAlert, boolean fromDialog) {
+
         Resources res = CellBroadcastSettings.getResourcesByOperator(context,
                 message.getSubscriptionId(),
                 CellBroadcastReceiver.getRoamingOperatorSupported(context));
+
         int channelTitleId = CellBroadcastResources.getDialogTitleResource(context, message);
-        CharSequence channelName = context.getText(channelTitleId);
+        CharSequence channelName = CellBroadcastResources.overrideTranslation(context,
+                channelTitleId, res, message.getLanguageCode());
         String messageBody = message.getMessageBody();
         final NotificationManager notificationManager =
                 (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
