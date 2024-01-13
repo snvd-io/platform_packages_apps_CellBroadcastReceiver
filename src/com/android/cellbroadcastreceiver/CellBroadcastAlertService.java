@@ -71,6 +71,7 @@ import android.view.Display;
 
 import com.android.cellbroadcastreceiver.CellBroadcastChannelManager.CellBroadcastChannelRange;
 import com.android.internal.annotations.VisibleForTesting;
+import com.android.modules.utils.build.SdkLevel;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -834,9 +835,14 @@ public class CellBroadcastAlertService extends Service {
         if (isWatch) {
             pi = PendingIntent.getBroadcast(context, 0, intent, PendingIntent.FLAG_IMMUTABLE);
         } else {
+            ActivityOptions options = ActivityOptions.makeBasic();
+            if (SdkLevel.isAtLeastU()) {
+                options.setPendingIntentCreatorBackgroundActivityStartMode(
+                        ActivityOptions.MODE_BACKGROUND_ACTIVITY_START_ALLOWED);
+            }
             pi = PendingIntent.getActivity(context, REQUEST_CODE_CONTENT_INTENT, intent,
                             PendingIntent.FLAG_UPDATE_CURRENT
-                            | PendingIntent.FLAG_IMMUTABLE);
+                            | PendingIntent.FLAG_IMMUTABLE, options.toBundle());
         }
         CellBroadcastChannelManager channelManager = new CellBroadcastChannelManager(
                 context, message.getSubscriptionId());
@@ -883,9 +889,14 @@ public class CellBroadcastAlertService extends Service {
             // sound, vibration and alert reminder.
             Intent deleteIntent = new Intent(intent);
             deleteIntent.putExtra(CellBroadcastAlertService.DISMISS_DIALOG, true);
+            ActivityOptions options = ActivityOptions.makeBasic();
+            if (SdkLevel.isAtLeastU()) {
+                options.setPendingIntentCreatorBackgroundActivityStartMode(
+                        ActivityOptions.MODE_BACKGROUND_ACTIVITY_START_ALLOWED);
+            }
             builder.setDeleteIntent(PendingIntent.getActivity(context, REQUEST_CODE_DELETE_INTENT,
                     deleteIntent, PendingIntent.FLAG_UPDATE_CURRENT
-                            | PendingIntent.FLAG_IMMUTABLE));
+                            | PendingIntent.FLAG_IMMUTABLE, options.toBundle()));
 
             builder.setContentIntent(pi);
             // This will break vibration on FEATURE_WATCH, so use it for anything else
