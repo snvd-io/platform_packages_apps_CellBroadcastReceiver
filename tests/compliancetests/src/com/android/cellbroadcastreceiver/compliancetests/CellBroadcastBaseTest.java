@@ -234,6 +234,7 @@ public class CellBroadcastBaseTest {
             assertTrue(sMockModemManager.disconnectMockModemService());
             sMockModemManager = null;
         }
+        sInputMccMnc = null;
     }
 
     @Rule
