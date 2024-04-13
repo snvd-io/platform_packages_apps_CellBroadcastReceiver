@@ -2501,6 +2501,11 @@
       "default_value": "false",
       "toggle_avail": "true",
       "alert_type":"notification"
+    },
+    "4400": {
+      "title": "",
+      "default_value": "true",
+      "toggle_avail": "false"
     }
   },
   "puertorico": {
