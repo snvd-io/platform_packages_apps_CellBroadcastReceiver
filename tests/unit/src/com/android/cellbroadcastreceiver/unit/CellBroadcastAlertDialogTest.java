@@ -177,6 +177,10 @@ public class CellBroadcastAlertDialogTest extends
 
         CellBroadcastSettings.resetResourcesCache();
         CellBroadcastChannelManager.clearAllCellBroadcastChannelRanges();
+        String[] values = new String[]{"0x1112-0x1112:rat=gsm, always_on=true"};
+        doReturn(values).when(mContext.getResources()).getStringArray(
+                eq(com.android.cellbroadcastreceiver.R.array
+                .cmas_presidential_alerts_channels_range_strings));
     }
 
     @After
