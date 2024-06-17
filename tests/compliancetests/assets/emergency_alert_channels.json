@@ -2299,16 +2299,10 @@
     }
   },
   "saudiarabia": {
-    "4352": {
+    "4355": {
       "title": "",
-      "default_value": "true",
-      "toggle_avail": "false",
-      "end_channel": "4354"
-    },
-    "4356": {
-      "title": "",
-      "default_value": "true",
-      "toggle_avail": "false"
+      "default_value": "false",
+      "toggle_avail": "true"  // test_mode
     },
     "4370": {
       "title": "تنبيهات على المستوى الوطني",
