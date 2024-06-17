@@ -4423,77 +4423,77 @@
   },
   "austria_tmobile": {
     "4370": {
-      "title": "Emergency alarm",
+      "title": "Emergency alert", //Notfallalarm
       "default_value": "true",
       "toggle_avail": "false"
     },
     "4383": {
-      "title": "Emergency alarm",
+      "title": "Emergency alert", //Notfallalarm
       "default_value": "true",
       "toggle_avail": "false"
     },
     "919": {
-      "title": "Emergency alarm",
+      "title": "Emergency alert", //Notfallalarm
       "default_value": "true",
       "toggle_avail": "false"
     },
     "4372": {
-      "title": "Extreme threat",
+      "title": "Extreme threat", //Extreme Gefahr
       "default_value": "true",
       "toggle_avail": "true"
     },
     "4385": {
-      "title": "Extreme threat",
+      "title": "Extreme threat", //Extreme Gefahr
       "default_value": "true",
       "toggle_avail": "true"
     },
     "4378": {
-      "title": "Severe threat",
+      "title": "Severe threat", //Erhebliche Gefahr
       "default_value": "true",
       "toggle_avail": "true"
     },
     "4391": {
-      "title": "Severe threat",
+      "title": "Severe threat", //Erhebliche Gefahr
       "default_value": "true",
       "toggle_avail": "true"
     },
     "4396": {
-      "title": "Threat information",
+      "title": "Threat information", // Gefahreninformation
       "default_value": "true",
       "toggle_avail": "true"
     },
     "4397": {
-      "title": "Threat information",
+      "title": "Threat information", //Gefahreninformation
       "default_value": "true",
       "toggle_avail": "true"
     },
     "4379": {
-      "title": "Search for missing person",
+      "title": "Search for missing person", //Suche nach abgängiger Person
       "default_value": "true",
       "toggle_avail": "true"
     },
     "4392": {
-      "title": "Search for missing person",
+      "title": "Search for missing person", //Suche nach abgängiger Person
       "default_value": "true",
       "toggle_avail": "true"
     },
     "4380": {
-      "title": "Cell Broadcast Test",
+      "title": "Cell Broadcast Test", //Cell Broadcast Test
       "default_value": "false",
       "toggle_avail": "false"
     },
     "4393": {
-      "title": "Cell Broadcast Test",
+      "title": "Cell Broadcast Test", //Cell Broadcast Test
       "default_value": "false",
       "toggle_avail": "false"
     },
     "4381": {
-      "title": "Test alarm",
+      "title": "Test alarm", //Übungsalarm
       "default_value": "false",
       "toggle_avail": "false"
     },
     "4394": {
-      "title": "Test alarm",
+      "title": "Test alarm", //Übungsalarm
       "default_value": "false",
       "toggle_avail": "false"
     }
