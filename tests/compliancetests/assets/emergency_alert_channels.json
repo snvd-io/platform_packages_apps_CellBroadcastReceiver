@@ -4809,72 +4809,72 @@
   },
   "Luxembourg": {
     "4370": {
-      "title": "LU-Alert",
+      "title": "LU-Alert",  // LU-Alert
       "default_value": "true",
       "toggle_avail": "false"
     },
     "4383": {
-      "title": "LU-Alert",
+      "title": "LU-Alert", // LU-Alert
       "default_value": "true",
       "toggle_avail": "false"
     },
     "4371": {
-      "title": "LU-Alert",
+      "title": "LU-Alert", // LU-Alert
       "default_value": "true",
       "toggle_avail": "false"
     },
     "4384": {
-      "title": "LU-Alert",
+      "title": "LU-Alert", // LU-Alert
       "default_value": "true",
       "toggle_avail": "false"
     },
     "4375": {
-      "title": "LU-Alert",
+      "title": "LU-Alert", // LU-Alert
       "default_value": "true",
       "toggle_avail": "false"
     },
     "4388": {
-      "title": "LU-Alert",
+      "title": "LU-Alert", // LU-Alert
       "default_value": "true",
       "toggle_avail": "false"
     },
     "4396": {
-      "title": "LU-Alert",
+      "title": "LU-Alert", // LU-Alert
       "default_value": "true",
       "toggle_avail": "false"
     },
     "4397": {
-      "title": "LU-Alert",
+      "title": "LU-Alert", // LU-Alert
       "default_value": "true",
       "toggle_avail": "false"
     },
     "4379": {
-      "title": "LU-Alert : Kidnapping alert",
+      "title": "LU-Alert : Kidnapping alert", // LU-Alert : Entführungswarnung
       "default_value": "true",
       "toggle_avail": "true"
     },
     "4392": {
-      "title": "LU-Alert : Kidnapping alert",
+      "title": "LU-Alert : Kidnapping alert", // LU-Alert : Entführungswarnung
       "default_value": "true",
       "toggle_avail": "true"
     },
     "4380": {
-      "title": "LU-Alert Test",
+      "title": "LU-Alert Test", // LU-Alert Test
       "default_value": "false",
       "toggle_avail": "true"
     },
     "4393": {
-      "title": "LU-Alert Test",
+      "title": "LU-Alert Test", // LU-Alert Test
       "default_value": "false",
       "toggle_avail": "true"
     },
     "4381": {
-      "title": "LU-Alert Exercise",
+      "title": "LU-Alert Exercise", // LU-Alert Übung
       "default_value": "false",
       "toggle_avail": "true"
     },
     "4394": {
-      "title": "LU-Alert Exercise",
+      "title": "LU-Alert Exercise", // LU-Alert Übung
       "default_value": "false",
       "toggle_avail": "true"
     }
