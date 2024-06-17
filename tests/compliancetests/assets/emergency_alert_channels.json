@@ -168,6 +168,11 @@
       "title": "Exercise", // 'Øvelse' == 'Exercise'
       "default_value": "false",
       "toggle_avail": "true"
+    },
+    "4400": {
+      "title": "",
+      "default_value": "true",
+      "toggle_avail": "false"
     }
   },
   "peru_entel": {
